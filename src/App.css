@@ -1,1 +1,39 @@
 /* Other rules */
+body {
+    background-color: black;
+}
+
+span{
+    color: white;
+}
+
+.charmainspace{
+    display: flex;
+    justify-content: center;
+}
+
+.charidcard {
+    height: 300px;
+    width: 40%;
+    align-items: center;
+    margin-top: 50px ;
+    margin-right: 100px;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-radius: 15px;
+}
+.charidcard img{
+    max-height:100%;
+}
+
+.cardcontainer{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottomcard {
+    height: 250px;
+}
