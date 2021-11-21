@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function Characters() {
   const [data, setData] = useState();
+  const [charId, setCharId] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -26,7 +28,13 @@ function Characters() {
       <div className="cardcontainer">
         {data.results.map((character) => {
           return (
-            <div className="charidcard">
+            <Link
+              onClick={() => {
+                setCharId(character._id);
+              }}
+              className="charidcard"
+              to="`/comics/:characterId`"
+            >
               <p> {character.name}</p>
               <div className="bottomcard">
                 <img
@@ -35,7 +43,7 @@ function Characters() {
                 />
                 <span>{character.description}</span>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

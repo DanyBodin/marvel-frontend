@@ -7,26 +7,65 @@ span{
     color: white;
 }
 
+h1 {
+    color: white;
+}
+
 .charmainspace{
     display: flex;
     justify-content: center;
 }
 
-.charidcard {
-    height: 300px;
-    width: 40%;
+.upperheader {
+    display: flex;
     align-items: center;
-    margin-top: 50px ;
-    margin-right: 100px;
-    border-top: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    border-radius: 15px;
-}
-.charidcard img{
-    max-height:100%;
+    justify-content: center;
+    height: 50px;
+    border-top: 1px rgb(70, 70, 70) solid;
+    border-bottom: 1px rgb(70, 70, 70) solid;
+    width: 100%;
 }
 
-.cardcontainer{
+.upperheader img, .banner img{
+    max-height: 100%;
+}
+
+.bottomheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px rgb(70, 70, 70) solid;
+    height: 25px;
+    background-color: rgb(20, 20, 30);
+}
+
+.bottomheader button {
+    background-color: transparent;
+    color: red;
+    border: none;
+    margin: 0 30px;
+}
+
+.banner {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px rgb(70, 70, 70) solid;
+}
+
+.charidcard {
+    height: 300px;
+    width: 260px;
+    align-items: center;
+    margin-top: 50px ;
+}
+
+.charidcard img{
+    max-width: 100%;
+}
+
+.cardcontainer {
     width: 1400px;
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +73,90 @@ span{
     align-items: center;
 }
 
+.maincomic {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.comiccard {
+    width: 260px;
+    margin-bottom: 40px;
+}
+
+.comiccard img {
+    max-width: 100%;
+}
+
+.comicflex {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: top;
+}
+
 .bottomcard {
     height: 250px;
+}
+
+.searchbar {
+    width: 600px;
+    height: 20px;
+    border: none;
+    background-color: rgb(60, 60, 60);
+    border-radius: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+.signupform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupbutton {
+    width: 500px;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 0 4px 20px;
+    text-align: left;
+    text-decoration: none;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+
+.signupletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupcondition {
+    width: 400px;
+    font-size: 12px;
+    color: rgb(188, 188, 188);
+}
+
+.submitbutton {
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 63, 63);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.footer {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    color: rgb(86, 86, 86);
 }
